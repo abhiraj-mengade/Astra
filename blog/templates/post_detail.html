@@ -21,9 +21,9 @@
                     {{ post.created_at.strftime('%d.%m.%Y') }}
                 </p>
                 {% if current_user.is_authenticated and current_user == post.author %}
-                <a class="btn btn-sm btn-outline-success mr-1" href="{{ url_for('post_update', post_id=post.id) }}">Aggiorna</a>
+                <a class="btn btn-sm btn-outline-success mr-1" href="{{ url_for('post_update', post_id=post.id) }}">Update</a>
                 <button type="button" class="btn btn-sm btn-outline-danger" data-toggle="modal" data-target="#deletePostModal">
-                    Cancella
+                    Delete
                 </button>
                 {% endif %}
                 <p>{{ post.body|markdown }}</p>

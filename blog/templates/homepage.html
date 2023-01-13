@@ -21,7 +21,7 @@
                 {% if post.description %}
                 <p class="p-small-one text-muted mb-0">
                     {{ post.description }}
-                    <a class="read-more" href="{{ url_for('post_detail', post_slug=post.slug) }}">Leggi articolo.</a>
+                    <a class="read-more" href="{{ url_for('post_detail', post_slug=post.slug) }}">Read Article.</a>
                 </p>
                 {% endif %}
             </div>
@@ -30,13 +30,13 @@
             <div class="pagination-block">
                 {% if previous_page %}
                 {% if current_page == 2 %}
-                <a class="btn btn-sm btn-outline-secondary" href="/">↩ Indietro</a>
+                <a class="btn btn-sm btn-outline-secondary" href="/">↩ Back</a>
                 {% else %}
-                <a class="btn btn-sm btn-outline-secondary" href="{{ previous_page }}">↩ Indietro</a>
+                <a class="btn btn-sm btn-outline-secondary" href="{{ previous_page }}">↩ Back</a>
                 {% endif %}
                 {% endif %}
                 {% if next_page %}
-                <a class="btn btn-sm btn-outline-secondary" href="{{ next_page }}">↪ Avanti</a>
+                <a class="btn btn-sm btn-outline-secondary" href="{{ next_page }}">↪ Ahead</a>
                 {% endif %}
             </div>
         </div>
