@@ -1,6 +1,13 @@
 # Astra Blog Platform 
 ### Developed as a project for the course of MAD-1
 
+### Deployed on Replit:
+https://astra.mixedbag.repl.co/ 
+
+### TechStack:
+Flask
+Jinja Templating
+SQLite 
 
 
 ### How To Install Locally
